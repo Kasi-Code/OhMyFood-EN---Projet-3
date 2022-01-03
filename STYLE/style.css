@@ -35,7 +35,7 @@
 }
 
 .gap {
-  gap: 20px;
+  gap: 25px;
 }
 
 .container {
@@ -114,6 +114,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 5%;
 }
 
 .how-it-works .instructions .chose-instructions:hover {
@@ -133,7 +134,7 @@
 }
 
 .how-it-works .instructions .chose-instructions div {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .how-it-works .instructions .chose-instructions .choice-number {
