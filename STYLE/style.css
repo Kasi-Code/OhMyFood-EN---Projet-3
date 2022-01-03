@@ -38,24 +38,24 @@
   gap: 20px;
 }
 
-.main {
+.container {
   max-width: 1340px;
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.top-logo-bar {
+.header-logo {
   height: 60px;
   position: relative;
   -webkit-box-shadow: 0px 4px 10px 0px #adadad;
           box-shadow: 0px 4px 10px 0px #adadad;
 }
 
-.top-logo-bar .logo {
+.header-logo .logo {
   height: 30px;
 }
 
-.location-bar {
+.header-location {
   color: #353535;
   height: 50px;
   background-color: #eaeaea;
@@ -63,7 +63,7 @@
   font-size: 12px;
 }
 
-.discover-book-section {
+.header-list {
   text-align: center;
   min-height: 290px;
   background-color: #f6f6f6;
@@ -73,17 +73,17 @@
   padding: 0 10%;
 }
 
-.discover-book-section .div-1 {
+.header-list .div-1 {
   font-weight: bold;
   font-size: 18px;
 }
 
-.discover-book-section .div-2 {
+.header-list .div-2 {
   font-weight: lighter;
   font-size: 14px;
 }
 
-.discover-book-section .exlore .explore-button {
+.header-list .exlore .explore-button {
   color: white;
   height: 50px;
   width: 220px;
@@ -142,6 +142,7 @@
   width: 25px;
   padding: 3px 8px;
   border-radius: 50%;
+  margin-left: -12.5px;
   background-color: #9356DC;
 }
 
