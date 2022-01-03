@@ -23,8 +23,14 @@
 
 $grey-text: #353535;
 $grey-BG: #eaeaea;
+$lighter-grey-BG: #f6f6f6;
+$bold-text: bold;
+$thin-text: lighter;
+$small-text: 12px;
+$medium-text: 14px;
+$large-text: 18px;
 
-// TOOLS ENDS
+// TOOLS Ergb(29, 21, 21)
 
 .main {
     height: 100%;
@@ -32,16 +38,45 @@ $grey-BG: #eaeaea;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } 
 .top-logo-bar {
+    height: 60px;  
+    box-shadow: 0px 0px 7px 0px $grey-text;  
+    position: relative;
     z-index: 2;
-    height: 60px;    
-    box-shadow: 5px 10px 8px 10px #000000;
     .logo {
         height: 30px;
     }
 }
 .location-bar {
-    z-index: 1;
     color: $grey-text;
     height: 50px;
     background-color: $grey-BG;
+    z-index: 1;
+    font-weight: $bold-text;
+    font-size: $small-text;
+}
+.discover-book-section {
+    text-align: center;
+    min-height: 290px;
+    background-color: $lighter-grey-BG;
+    justify-content: space-evenly;
+    padding: 0 10%;
+    .div-1 {
+        font-weight: $bold-text;
+        font-size: $large-text;
+    }
+    .div-2 {
+        font-weight: $thin-text;
+        font-size: $medium-text;
+    }
+    .exlore {
+        // background-color: red;
+        .explore-button {
+            color: white;
+            height: 50px;
+            width: 220px;
+            border-radius: 25px;
+            background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+            border: none;
+        }
+    }
 }
