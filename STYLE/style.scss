@@ -41,25 +41,71 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } 
-.header-logo {
-    height: 60px;  
-    position: relative;
-    box-shadow: $drop-shadow;
-    .logo {
-        height: 30px;
+.card {
+
+    &__body {
+        padding: 5%;
+    }
+    &__logo {
+        height: 60px;  
+        position: relative;
+        box-shadow: $drop-shadow;
+        &__img {
+            height: 30px;
+        }
+    }
+    &__text {
+        color: $grey-text;
+        // height: 50px;
+        // background-color: $grey-BG;
+        font-weight: $thin-text;
+        font-size: $medium-text;
+        &--small {
+            font-size: $small-text;            
+        }
+        &--medium {
+            font-size: $medium-text;            
+        }
+        &--large {
+            font-size: $large-text;            
+        }
+        &--thin {
+            font-weight: $thin-text;
+        }
+        &--bold {
+            font-weight: $bold-text;
+        }
+        &--small-bold {
+            font-size: $small-text;   
+            font-weight: $bold-text;         
+        }
+    }
+    &__title {
+        font-weight: $bold-text;
+        font-size: $large-text;
+        &--white {
+            color: white;
+        }
+    }
+    &--5 {
+        height: 50px;
+    }
+    &--10 {
+        height: 100px;
+    }
+    &--15 {
+        height: 150px;
     }
 }
-.header-location {
-    color: $grey-text;
-    height: 50px;
-    background-color: $grey-BG;
-    font-weight: $bold-text;
-    font-size: $small-text;
+.bg {
+    &--grey {
+        background-color: $lighter-grey-BG;
+    }
 }
 .header-list {
     text-align: center;
     min-height: 290px;
-    background-color: $lighter-grey-BG;
+    // background-color: $lighter-grey-BG;
     justify-content: space-evenly;
     padding: 0 10%;
     .div-1 {
@@ -70,26 +116,28 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
         font-weight: $thin-text;
         font-size: $medium-text;
     }
-    .exlore {
-        .explore-button {
-            // align-items: center;
-            // display: block;
+    .btn {
+        &__big {
+            display: block;
             color: white;
             height: 50px;
             width: 220px;
+            padding: 10px;
+            line-height: 25px;
+            text-align: center;
             border-radius: 25px;
             background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+            text-decoration: none;
             box-shadow: $drop-shadow;
-            border: none;
         }
     }
 }
 .how-it-works {
-    min-height: 440px;
-    max-height: 440px;
+    // min-height: 440px;
+    // max-height: 440px;
     padding: 5%;
     justify-content: center;
-    .header {
+    .title {
         font-weight: $bold-text;
         font-size: $large-text;
     }
@@ -110,7 +158,7 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
             div {
                 margin-right: 10px;
             }
-            .choice-number {
+            .__number {
                 color: white;
                 height: 25px; 
                 width: 25px;
@@ -118,10 +166,6 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
                 border-radius: 50%;
                 margin-left: -12.5px;
                 background-color: #9356DC;
-            }
-            .choice-info {
-                font-weight: $bold-text;
-                font-size: $small-text;
             }
         }
     }
