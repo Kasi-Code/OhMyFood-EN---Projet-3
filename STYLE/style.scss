@@ -41,11 +41,8 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } 
-.card {
+.header {
 
-    &__body {
-        padding: 5%;
-    }
     &__logo {
         height: 60px;  
         position: relative;
@@ -54,38 +51,54 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
             height: 30px;
         }
     }
-    &__text {
-        color: $grey-text;
-        // height: 50px;
-        // background-color: $grey-BG;
-        font-weight: $thin-text;
-        font-size: $medium-text;
-        &--small {
-            font-size: $small-text;            
-        }
-        &--medium {
-            font-size: $medium-text;            
-        }
-        &--large {
-            font-size: $large-text;            
-        }
-        &--thin {
-            font-weight: $thin-text;
-        }
-        &--bold {
-            font-weight: $bold-text;
-        }
-        &--small-bold {
-            font-size: $small-text;   
-            font-weight: $bold-text;         
+    &__location {
+        height: 50px;
+    }
+    &__list {
+        text-align: center;
+        min-height: 290px;
+        justify-content: space-evenly;
+        padding: 0 10%;
+    }
+}
+.main {
+    // min-height: 440px;
+    // max-height: 440px;
+    padding: 5%;
+
+    &__instructions {
+        margin-top: 25px;
+        justify-content: space-between;
+        padding-left: 5%;
+    }
+    &__number {
+        color: white;
+        height: 25px; 
+        width: 25px;
+        padding: 3px 8px;
+        border-radius: 50%;
+        margin-left: -12.5px;
+        background-color: #9356DC;
+    }
+    .hover {
+        background-color: $lighter-grey-BG;
+        min-height: 75px;
+        border-radius: 25px;
+        box-shadow: $drop-shadow;
+        align-items: center;
+        div {
+            margin-right: 10px;
         }
     }
-    &__title {
-        font-weight: $bold-text;
-        font-size: $large-text;
-        &--white {
-            color: white;
-        }
+    .hover:hover {
+        background-color: #9356DC1A;
+        cursor: pointer;
+    }
+}
+.card {
+
+    &__body {
+        padding: 5%;
     }
     &--5 {
         height: 50px;
@@ -97,76 +110,57 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
         height: 150px;
     }
 }
+.text {
+    color: $grey-text;
+    // height: 50px;
+    // background-color: $grey-BG;
+    font-weight: $thin-text;
+    font-size: $medium-text;
+    &--small {
+        font-size: $small-text;            
+    }
+    &--medium {
+        font-size: $medium-text;            
+    }
+    &--large {
+        font-size: $large-text;            
+    }
+    &--thin {
+        font-weight: $thin-text;
+    }
+    &--bold {
+        font-weight: $bold-text;
+    }
+    &--small-bold {
+        font-size: $small-text;   
+        font-weight: $bold-text;         
+    }
+}
+.title {
+    font-weight: $bold-text;
+    font-size: $large-text;
+    &--white {
+        color: white;
+    }
+}
+
 .bg {
     &--grey {
         background-color: $lighter-grey-BG;
     }
 }
-.header-list {
-    text-align: center;
-    min-height: 290px;
-    // background-color: $lighter-grey-BG;
-    justify-content: space-evenly;
-    padding: 0 10%;
-    .div-1 {
-        font-weight: $bold-text;
-        font-size: $large-text;
-    }
-    .div-2 {
-        font-weight: $thin-text;
-        font-size: $medium-text;
-    }
-    .btn {
-        &__big {
-            display: block;
-            color: white;
-            height: 50px;
-            width: 220px;
-            padding: 10px;
-            line-height: 25px;
-            text-align: center;
-            border-radius: 25px;
-            background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-            text-decoration: none;
-            box-shadow: $drop-shadow;
-        }
-    }
-}
-.how-it-works {
-    // min-height: 440px;
-    // max-height: 440px;
-    padding: 5%;
-    justify-content: center;
-    .title {
-        font-weight: $bold-text;
-        font-size: $large-text;
-    }
-    .instructions {
-        margin-top: 25px;
-        justify-content: space-between;
-        padding-left: 5%;
-        .chose-instructions:hover {
-            background-color: #9356DC1A;
-            cursor: pointer;
-        }
-        .chose-instructions {
-            background-color: $lighter-grey-BG;
-            min-height: 75px;
-            border-radius: 25px;
-            box-shadow: $drop-shadow;
-            align-items: center;
-            div {
-                margin-right: 10px;
-            }
-            .__number {
-                color: white;
-                height: 25px; 
-                width: 25px;
-                padding: 3px 8px;
-                border-radius: 50%;
-                margin-left: -12.5px;
-                background-color: #9356DC;
-            }
-        }
+.btn {
+    &__main {
+        display: block;
+        color: white;
+        height: 50px;
+        width: 220px;
+        padding: 10px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 25px;
+        background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+        text-decoration: none;
+        box-shadow: $drop-shadow;
     }
 }

@@ -44,59 +44,74 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.card__body {
-  padding: 5%;
-}
-
-.card__logo {
+.header__logo {
   height: 60px;
   position: relative;
   -webkit-box-shadow: 0px 4px 10px 0px #adadad;
           box-shadow: 0px 4px 10px 0px #adadad;
 }
 
-.card__logo__img {
+.header__logo__img {
   height: 30px;
 }
 
-.card__text {
-  color: #353535;
-  font-weight: lighter;
-  font-size: 14px;
+.header__location {
+  height: 50px;
 }
 
-.card__text--small {
-  font-size: 12px;
+.header__list {
+  text-align: center;
+  min-height: 290px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 10%;
 }
 
-.card__text--medium {
-  font-size: 14px;
+.main {
+  padding: 5%;
 }
 
-.card__text--large {
-  font-size: 18px;
+.main__instructions {
+  margin-top: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 5%;
 }
 
-.card__text--thin {
-  font-weight: lighter;
-}
-
-.card__text--bold {
-  font-weight: bold;
-}
-
-.card__text--small-bold {
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.card__title {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.card__title--white {
+.main__number {
   color: white;
+  height: 25px;
+  width: 25px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  margin-left: -12.5px;
+  background-color: #9356DC;
+}
+
+.main .hover {
+  background-color: #f6f6f6;
+  min-height: 75px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 4px 10px 0px #adadad;
+          box-shadow: 0px 4px 10px 0px #adadad;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .hover div {
+  margin-right: 10px;
+}
+
+.main .hover:hover {
+  background-color: #9356DC1A;
+  cursor: pointer;
+}
+
+.card__body {
+  padding: 5%;
 }
 
 .card--5 {
@@ -111,30 +126,51 @@
   height: 150px;
 }
 
-.bg--grey {
-  background-color: #f6f6f6;
-}
-
-.header-list {
-  text-align: center;
-  min-height: 290px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 0 10%;
-}
-
-.header-list .div-1 {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.header-list .div-2 {
+.text {
+  color: #353535;
   font-weight: lighter;
   font-size: 14px;
 }
 
-.header-list .btn__big {
+.text--small {
+  font-size: 12px;
+}
+
+.text--medium {
+  font-size: 14px;
+}
+
+.text--large {
+  font-size: 18px;
+}
+
+.text--thin {
+  font-weight: lighter;
+}
+
+.text--bold {
+  font-weight: bold;
+}
+
+.text--small-bold {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.title--white {
+  color: white;
+}
+
+.bg--grey {
+  background-color: #f6f6f6;
+}
+
+.btn__main {
   display: block;
   color: white;
   height: 50px;
@@ -148,55 +184,5 @@
   text-decoration: none;
   -webkit-box-shadow: 0px 4px 10px 0px #adadad;
           box-shadow: 0px 4px 10px 0px #adadad;
-}
-
-.how-it-works {
-  padding: 5%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.how-it-works .title {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.how-it-works .instructions {
-  margin-top: 25px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 5%;
-}
-
-.how-it-works .instructions .chose-instructions:hover {
-  background-color: #9356DC1A;
-  cursor: pointer;
-}
-
-.how-it-works .instructions .chose-instructions {
-  background-color: #f6f6f6;
-  min-height: 75px;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 4px 10px 0px #adadad;
-          box-shadow: 0px 4px 10px 0px #adadad;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.how-it-works .instructions .chose-instructions div {
-  margin-right: 10px;
-}
-
-.how-it-works .instructions .chose-instructions .__number {
-  color: white;
-  height: 25px;
-  width: 25px;
-  padding: 3px 8px;
-  border-radius: 50%;
-  margin-left: -12.5px;
-  background-color: #9356DC;
 }
 /*# sourceMappingURL=style.css.map */
