@@ -59,7 +59,7 @@
   height: 50px;
 }
 
-.header__list {
+.header__content {
   text-align: center;
   min-height: 290px;
   -webkit-box-pack: space-evenly;
@@ -68,19 +68,20 @@
   padding: 0 10%;
 }
 
-.main {
+.instruction {
+  min-height: 400px;
+  max-height: 400px;
   padding: 5%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.main__instructions {
-  margin-top: 25px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.instruction__option {
   padding-left: 5%;
 }
 
-.main__list {
+.instruction__bullet {
   color: white;
   height: 25px;
   width: 25px;
@@ -90,7 +91,7 @@
   background-color: #9356DC;
 }
 
-.main .hover {
+.instruction__list {
   background-color: #f6f6f6;
   min-height: 75px;
   border-radius: 25px;
@@ -101,11 +102,11 @@
           align-items: center;
 }
 
-.main .hover div {
+.instruction__list div {
   margin-right: 10px;
 }
 
-.main .hover:hover {
+.instruction__list:hover {
   background-color: #9356DC1A;
   cursor: pointer;
 }
@@ -127,21 +128,43 @@
 }
 
 .text {
-  color: #353535;
-  font-weight: lighter;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .text--small {
-  font-size: 12px;
+  font-size: 13px;
+}
+
+.text--small.thin {
+  font-weight: lighter;
+}
+
+.text--small.bold {
+  font-weight: bold;
 }
 
 .text--medium {
-  font-size: 14px;
+  font-size: 15px;
+}
+
+.text--medium.thin {
+  font-weight: lighter;
+}
+
+.text--medium.bold {
+  font-weight: bold;
 }
 
 .text--large {
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.text--large.thin {
+  font-weight: lighter;
+}
+
+.text--large.bold {
+  font-weight: bold;
 }
 
 .text--thin {
@@ -152,14 +175,21 @@
   font-weight: bold;
 }
 
-.text--small-bold {
-  font-size: 12px;
-  font-weight: bold;
+.font--grey {
+  color: #353535;
+}
+
+.font--black {
+  color: black;
+}
+
+.font--white {
+  color: white;
 }
 
 .title {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .title--white {
@@ -182,6 +212,8 @@
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
   -webkit-box-shadow: 0px 4px 10px 0px #adadad;
           box-shadow: 0px 4px 10px 0px #adadad;
 }
