@@ -4,6 +4,20 @@
     padding: 0;
 }
 
+// Variables
+
+$white-text: white;
+$grey-text: #353535;
+$black-text: black;
+$grey-BG: #eaeaea;
+$lighter-grey-BG: #f6f6f6;
+$bold-text: bold;
+$thin-text: lighter;
+$small-text: 13px;
+$medium-text: 15px;
+$large-text: 20px;
+$drop-shadow: 0px 5px 15px -5px #bebebe;
+
 // TOOLS
 
 .row {
@@ -19,24 +33,10 @@
     justify-content: center;
 }
 .gap {
-    gap: 25px;
+    gap: 20px;
 }
 
-// Variables
-
-$white-text: white;
-$grey-text: #353535;
-$black-text: black;
-$grey-BG: #eaeaea;
-$lighter-grey-BG: #f6f6f6;
-$bold-text: bold;
-$thin-text: lighter;
-$small-text: 13px;
-$medium-text: 15px;
-$large-text: 20px;
-$drop-shadow: 0px 4px 10px 0px #adadad;
-
-// TOOLS 
+// BLOCK
 
 .container {
     max-width: 1340px;
@@ -47,7 +47,7 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
     &__logo {
         height: 60px;  
         position: relative;
-        box-shadow: $drop-shadow;
+        box-shadow: 0px 1px 5px 0px #adadad;
         &__img {
             height: 30px;
         }
@@ -57,21 +57,21 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
     }
     &__content {
         text-align: center;
-        min-height: 290px;
         justify-content: space-evenly;
-        padding: 0 10%;
+        padding: 20px 10% 40px 10%;
+        div {
+            margin: 15px 0;
+        }
     }
 }
 .instruction {
-    min-height: 400px;
-    max-height: 400px;
-    padding: 5%;
-    justify-content: space-evenly;
+    padding: 40px 5% 55px 5%;
 
-    &__option {
+    &__list {
+        margin-top: 30px;
         padding-left: 5%;
     }
-    &__bullet {
+    &__item {
         color: white;
         height: 25px; 
         width: 25px;
@@ -80,22 +80,90 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
         margin-left: -12.5px;
         background-color: #9356DC;
     }
-    &__list {
+    &__option {
         background-color: $lighter-grey-BG;
         min-height: 75px;
         border-radius: 25px;
         box-shadow: $drop-shadow;
+        text-decoration: none;
         align-items: center;
+        color: black;
         div {
             margin-right: 10px;
         }
         &:hover {
             background-color: #9356DC1A;
-            cursor: pointer;
         }
     }
 }
-.card {
+.result {
+    padding: 50px 5%;
+
+    &__title {
+        margin-bottom: 25px;
+    }
+    &__card {
+        min-height: 250px;
+        max-height: 250px;
+        &__image {
+            height: 175px;
+            position: relative;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                // object-position: -5px -20px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+            div {
+                color: #008766;
+                width: 80px;
+                height: 30px;
+                border-radius: 3px;
+                background-color: #99e2d0;
+                position: absolute;
+                top: 14px;
+                right: 10px;
+                padding: 6px 0 0 25px;
+            }
+        }
+        &__description {
+            background-color: white;
+            height: 75px;
+            width: 100%;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            .info {
+                &__title {
+                    font-size: $medium-text;
+                    font-weight: $bold-text;
+                }
+                &__location {
+                    font-size: $medium-text;
+                    font-weight: $thin-text;
+                }
+            }
+            .heart {
+                padding: 0 10px 10px 0;
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+                a:hover {
+                    color: #9356DC;
+                }
+            }
+        }
+    }
+}
+
+// ELEMENT & MODIFICATION
+
+.plate {
     &__body {
         padding: 5%;
     }
@@ -166,8 +234,14 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
 }
 
 .bg {
-    &--grey {
+    &--white {
+        background-color: white;
+    }
+    &--light-grey {
         background-color: $lighter-grey-BG;
+    }
+    &--grey {
+        background-color: $grey-BG;
     }
 }
 .btn {
@@ -184,6 +258,6 @@ $drop-shadow: 0px 4px 10px 0px #adadad;
         text-decoration: none;
         font-size: $medium-text;
         font-weight: $bold-text;
-        box-shadow: $drop-shadow;
+        box-shadow: 0px 5px 15px -5px #757575;
     }
 }
