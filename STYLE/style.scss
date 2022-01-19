@@ -48,20 +48,20 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
         height: 60px;  
         position: relative;
         box-shadow: 0px 1px 5px 0px #adadad;
-        &__img {
+        &-img {
             height: 30px;
         }
     }
-    &__location {
-        height: 50px;
-    }
-    &__content {
-        text-align: center;
-        justify-content: space-evenly;
-        padding: 20px 10% 40px 10%;
-        div {
-            margin: 15px 0;
-        }
+}
+.location {    
+    height: 50px;    
+}
+.content {    
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 20px 10% 40px 10%;
+    div {
+        margin: 15px 0;
     }
 }
 .instruction {
@@ -96,7 +96,7 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
         }
     }
 }
-.result {
+.restaurants {
     padding: 50px 5%;
 
     &__title {
@@ -105,16 +105,25 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
     &__card {
         min-height: 250px;
         max-height: 250px;
-        &__image {
+        margin-bottom: 18px;
+        &-image {
             height: 175px;
             position: relative;
             img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
-                // object-position: -5px -20px;
+                object-position: 0 -50px;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
+                &.ob-pos {
+                    &--up{
+                        object-position: 0 -145px;
+                    }
+                    &--down{
+                        object-position: 0 10px;
+                    }
+                }
             }
             div {
                 color: #008766;
@@ -128,7 +137,7 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
                 padding: 6px 0 0 25px;
             }
         }
-        &__description {
+        &-description {
             background-color: white;
             height: 75px;
             width: 100%;
@@ -138,11 +147,11 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
             justify-content: space-between;
             padding: 0 10px;
             .info {
-                &__title {
+                &-title {
                     font-size: $medium-text;
-                    font-weight: $bold-text;
+                    // font-weight: $bold-text;
                 }
-                &__location {
+                &-location {
                     font-size: $medium-text;
                     font-weight: $thin-text;
                 }
@@ -226,7 +235,7 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
     }
 }
 .title {
-    font-weight: $bold-text;
+    // font-weight: $bold-text;
     font-size: $large-text;
     &--white {
         color: white;
@@ -245,7 +254,7 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
     }
 }
 .btn {
-    &__main {
+    &.btn-main {
         display: block;
         color: white;
         height: 50px;

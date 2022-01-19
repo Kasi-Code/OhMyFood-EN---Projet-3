@@ -51,15 +51,15 @@
           box-shadow: 0px 1px 5px 0px #adadad;
 }
 
-.header__logo__img {
+.header__logo-img {
   height: 30px;
 }
 
-.header__location {
+.location {
   height: 50px;
 }
 
-.header__content {
+.content {
   text-align: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -67,7 +67,7 @@
   padding: 20px 10% 40px 10%;
 }
 
-.header__content div {
+.content div {
   margin: 15px 0;
 }
 
@@ -111,34 +111,47 @@
   background-color: #9356DC1A;
 }
 
-.result {
+.restaurants {
   padding: 50px 5%;
 }
 
-.result__title {
+.restaurants__title {
   margin-bottom: 25px;
 }
 
-.result__card {
+.restaurants__card {
   min-height: 250px;
   max-height: 250px;
+  margin-bottom: 18px;
 }
 
-.result__card__image {
+.restaurants__card-image {
   height: 175px;
   position: relative;
 }
 
-.result__card__image img {
+.restaurants__card-image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 0 -50px;
+     object-position: 0 -50px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
-.result__card__image div {
+.restaurants__card-image img.ob-pos--up {
+  -o-object-position: 0 -145px;
+     object-position: 0 -145px;
+}
+
+.restaurants__card-image img.ob-pos--down {
+  -o-object-position: 0 10px;
+     object-position: 0 10px;
+}
+
+.restaurants__card-image div {
   color: #008766;
   width: 80px;
   height: 30px;
@@ -150,7 +163,7 @@
   padding: 6px 0 0 25px;
 }
 
-.result__card__description {
+.restaurants__card-description {
   background-color: white;
   height: 75px;
   width: 100%;
@@ -165,26 +178,25 @@
   padding: 0 10px;
 }
 
-.result__card__description .info__title {
+.restaurants__card-description .info-title {
   font-size: 15px;
-  font-weight: bold;
 }
 
-.result__card__description .info__location {
+.restaurants__card-description .info-location {
   font-size: 15px;
   font-weight: lighter;
 }
 
-.result__card__description .heart {
+.restaurants__card-description .heart {
   padding: 0 10px 10px 0;
 }
 
-.result__card__description .heart a {
+.restaurants__card-description .heart a {
   text-decoration: none;
   color: black;
 }
 
-.result__card__description .heart a:hover {
+.restaurants__card-description .heart a:hover {
   color: #9356DC;
 }
 
@@ -265,7 +277,6 @@
 }
 
 .title {
-  font-weight: bold;
   font-size: 20px;
 }
 
@@ -285,7 +296,7 @@
   background-color: #eaeaea;
 }
 
-.btn__main {
+.btn.btn-main {
   display: block;
   color: white;
   height: 50px;
