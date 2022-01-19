@@ -56,9 +56,15 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
     }
 }
 .location {    
-    height: 50px;    
+    height: 50px;  
+    &__context {
+        .marker {
+            margin-right: 15px;
+        }
+    }  
 }
-.content {    
+.content {   
+    height: 290px; 
     text-align: center;
     justify-content: space-evenly;
     padding: 20px 10% 40px 10%;
@@ -166,7 +172,7 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
                     color: black;
                 }
                 a:hover:before {
-                  content: "hey!"
+                  content: "Fav!"
                 }
                 a:hover {
                     color: #9356DC;
@@ -267,7 +273,6 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
     }
 }
 .title {
-    // font-weight: $bold-text;
     font-size: $large-text;
     &--white {
         color: white;

@@ -62,7 +62,12 @@ body {
   height: 50px;
 }
 
+.location__context .marker {
+  margin-right: 15px;
+}
+
 .content {
+  height: 290px;
   text-align: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -202,7 +207,7 @@ body {
 }
 
 .restaurants__card-description .heart a:hover:before {
-  content: "hey!";
+  content: "Fav!";
 }
 
 .restaurants__card-description .heart a:hover {
