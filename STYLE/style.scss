@@ -88,6 +88,15 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
         margin-left: -12.5px;
         background-color: #9356DC;
     }
+    &__icon {
+        // background-color: firebrick;
+        color: #757575;
+        height: 22.3px;
+        width: 22.3px;
+        padding: 4px 0;
+        margin: 0 12px;
+        // text-align: center;
+    }
     &__option {
         background-color: $lighter-grey-BG;
         min-height: 75px;
@@ -126,7 +135,7 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
                 border-top-right-radius: 15px;
                 &.ob-pos {
                     &--up{
-                        object-position: 0 -145px;
+                        object-position: 0 -140px;
                     }
                     &--down{
                         object-position: 0 10px;
@@ -167,15 +176,27 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
             }
             .heart {
                 padding: 0 10px 10px 0;
-                a {
-                    text-decoration: none;
-                    color: black;
-                }
-                a:hover:before {
-                  content: "Fav!"
-                }
+                height: 22.4px;
+                width: 22.3px;
+                font-size: 22.3px;
+                // text-decoration: none;
+                color: #353535;
+                // cursor: pointer;
+                // a {
+                // }
                 a:hover {
                     color: #9356DC;
+                }
+                .heart:hover .heart__icon-solid {
+                    opacity: 1;
+                  }
+                .heart__icon-solid {
+                  color: #9356DC;
+                  transition: 0.3s opacity;
+                  opacity: 0; 
+                }
+                .heart__icon {
+                  position: absolute;
                 }
             }
         }

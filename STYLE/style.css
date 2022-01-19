@@ -98,6 +98,14 @@ body {
   background-color: #9356DC;
 }
 
+.instruction__icon {
+  color: #757575;
+  height: 22.3px;
+  width: 22.3px;
+  padding: 4px 0;
+  margin: 0 12px;
+}
+
 .instruction__option {
   background-color: #f6f6f6;
   min-height: 75px;
@@ -150,8 +158,8 @@ body {
 }
 
 .restaurants__card-image img.ob-pos--up {
-  -o-object-position: 0 -145px;
-     object-position: 0 -145px;
+  -o-object-position: 0 -140px;
+     object-position: 0 -140px;
 }
 
 .restaurants__card-image img.ob-pos--down {
@@ -199,19 +207,29 @@ body {
 
 .restaurants__card-description .heart {
   padding: 0 10px 10px 0;
-}
-
-.restaurants__card-description .heart a {
-  text-decoration: none;
-  color: black;
-}
-
-.restaurants__card-description .heart a:hover:before {
-  content: "Fav!";
+  height: 22.4px;
+  width: 22.3px;
+  font-size: 22.3px;
+  color: #353535;
 }
 
 .restaurants__card-description .heart a:hover {
   color: #9356DC;
+}
+
+.restaurants__card-description .heart .heart:hover .heart__icon-solid {
+  opacity: 1;
+}
+
+.restaurants__card-description .heart .heart__icon-solid {
+  color: #9356DC;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.restaurants__card-description .heart .heart__icon {
+  position: absolute;
 }
 
 .footer {
