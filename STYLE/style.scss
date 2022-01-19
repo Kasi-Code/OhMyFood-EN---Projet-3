@@ -181,23 +181,22 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
                 font-size: 22.3px;
                 // text-decoration: none;
                 color: #353535;
-                // cursor: pointer;
-                // a {
-                // }
                 a:hover {
                     color: #9356DC;
-                }
-                .heart:hover .heart__icon-solid {
-                    opacity: 1;
-                  }
-                .heart__icon-solid {
-                  color: #9356DC;
-                  transition: 0.3s opacity;
-                  opacity: 0; 
                 }
                 .heart__icon {
                   position: absolute;
                 }
+            }
+            .heart:hover .heart__icon-solid {
+                opacity: 1;
+                // display: block;
+              }
+            .heart__icon-solid {
+              color: #9356DC;
+              transition: 0.3s opacity;
+              opacity: 0; 
+            //   display: none;
             }
         }
     }

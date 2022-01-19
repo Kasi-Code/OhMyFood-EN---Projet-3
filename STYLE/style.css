@@ -217,19 +217,19 @@ body {
   color: #9356DC;
 }
 
-.restaurants__card-description .heart .heart:hover .heart__icon-solid {
+.restaurants__card-description .heart .heart__icon {
+  position: absolute;
+}
+
+.restaurants__card-description .heart:hover .heart__icon-solid {
   opacity: 1;
 }
 
-.restaurants__card-description .heart .heart__icon-solid {
+.restaurants__card-description .heart__icon-solid {
   color: #9356DC;
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
   opacity: 0;
-}
-
-.restaurants__card-description .heart .heart__icon {
-  position: absolute;
 }
 
 .footer {
