@@ -38,12 +38,15 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
 .gap {
     gap: 20px;
 }
+.m-center {
+    margin: auto;
+}
 
 // BLOCK
 
 .container {
-    max-width: 1340px;
-    margin: auto;
+    max-width: 1000px;
+    padding: 0 5% 0 5%;
 } 
 .header {
     &__logo {
@@ -114,118 +117,121 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
     }
 }
 .restaurants {
-    padding: 50px 5%;
-
+    padding: 50px 0;
     &__title {
         margin-bottom: 25px;
     }
-    &__card {
-        min-height: 250px;
-        max-height: 250px;
-        margin-bottom: 18px;
-        &-image {
-            height: 175px;
-            position: relative;
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                object-position: 0 -40px;
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-                &.ob-pos {
-                    &--up{
-                        object-position: 0 -140px;
-                    }
-                    &--down{
-                        object-position: 0 10px;
-                    }
+}
+.card {
+    min-height: 250px;
+    max-height: 250px;
+    max-width: 400px;
+    margin-bottom: 18px;
+    &-image {
+        height: 150px;
+        position: relative;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: 0 -40px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            &.ob-pos {
+                &--up{
+                    object-position: 0 -140px;
                 }
-            }
-            div {
-                color: #008766;
-                width: 80px;
-                height: 30px;
-                border-radius: 3px;
-                background-color: #99e2d0;
-                position: absolute;
-                top: 14px;
-                right: 10px;
-                padding: 6px 0 0 25px;
+                &--down{
+                    object-position: 0 10px;
+                }
             }
         }
-        &-description {
-            background-color: white;
-            height: 75px;
-            width: 100%;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 10px;
-            box-shadow: $drop-shadow;
-            .info {
-                &-title {
-                    font-size: $medium-text;
-                    // font-weight: $bold-text;
-                }
-                &-location {
-                    font-size: $medium-text;
-                    font-weight: $thin-text;
-                }
+        div {
+            color: #008766;
+            width: 80px;
+            height: 30px;
+            border-radius: 3px;
+            background-color: #99e2d0;
+            position: absolute;
+            top: 14px;
+            right: 10px;
+            padding: 6px 0 0 25px;
+        }
+    }
+    &-description {
+        background-color: white;
+        height: 75px;
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        box-shadow: $drop-shadow;
+        .info {
+            &-title {
+                font-size: $medium-text;
+                // font-weight: $bold-text;
             }
-            .heart {
-                padding: 0 10px 10px 0;
-                height: 22.4px;
-                width: 22.3px;
-                font-size: 22.3px;
-                // text-decoration: none;
-                color: #353535;
-                a:hover {
-                    color: #9356DC;
-                }
-                .heart__icon {
-                  position: absolute;
-                }
+            &-location {
+                font-size: $medium-text;
+                font-weight: $thin-text;
             }
-            .heart:hover .heart__icon-solid {
-                opacity: 1;
-                // display: block;
-              }
-            .heart__icon-solid {
-              color: #9356DC;
-              transition: 0.3s opacity;
-              opacity: 0; 
-            //   display: none;
+        }
+        .heart {
+            padding: 0 10px 10px 0;
+            height: 22.4px;
+            width: 22.3px;
+            font-size: 22.3px;
+            // text-decoration: none;
+            color: #353535;
+            a:hover {
+                color: #9356DC;
             }
+            .heart__icon {
+              position: absolute;
+            }
+        }
+        .heart:hover .heart__icon-solid {
+            opacity: 1;
+            // display: block;
+          }
+        .heart__icon-solid {
+          color: #9356DC;
+          transition: 0.3s opacity;
+          opacity: 0; 
+        //   display: none;
         }
     }
 }
 .footer {
     height: 180px;
     background-color: #353535;
-    .f-container {
-        max-width: 1340px;
-        padding: 30px 5%;
-        &__logo {
-            margin-bottom: 5px;
-            &-img {
-                filter: invert(100%);
-                height: 15px;
-            }
-        }
-    .f-list {
-        list-style-type: none;
-        li {
-        margin-bottom: 3px;
-        }
-        li a {
-            color: white;
-            text-decoration: none;
-            font-size: $small-text;
+}
+.f {
+    // max-width: 1340px;
+    // padding: 30px 5%;
+    // margin: auto;
+    &__logo {
+        margin-bottom: 5px;
+        padding: 30px 0 0 0;
+        &-img {
+            filter: invert(100%);
+            height: 15px;
         }
     }
+.f-list {
+    list-style-type: none;
+    // padding: 0 5% 0 5%;
+    li {
+    margin-bottom: 3px;
     }
+    li a {
+        color: white;
+        text-decoration: none;
+        font-size: $small-text;
+    }
+}
 }
 
 // ELEMENT & MODIFICATION
@@ -325,5 +331,38 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
         font-size: $medium-text;
         font-weight: $bold-text;
         box-shadow: 0px 5px 15px -5px #757575;
+    }
+}
+/* TABLET SCREEN SIZING */
+
+@media (min-width: 705px) {
+    .items {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .card {
+        min-width: 300px;
+        margin-bottom: 0;
+        &-image {
+            height: 150px;
+        }
+    }
+
+}
+/* DESKTOP SCREEN SIZING */
+
+@media (min-width: 1000px) {
+    .instruction__list {
+        &.column {
+            flex-direction: row;
+        }
+    }
+    .instruction__option {
+        min-width: 250px;
+    }    
+    .card {
+        min-width: 410px;
     }
 }
