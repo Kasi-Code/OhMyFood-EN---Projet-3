@@ -38,9 +38,6 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
 .gap {
     gap: 20px;
 }
-.m-center {
-    // margin: auto;
-}
 
 // BLOCK
 
@@ -137,12 +134,12 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
             height: 100%;
             width: 100%;
             object-fit: cover;
-            object-position: 0 -50px;
+            object-position: 0 -65px;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             &.ob-pos {
                 &--up{
-                    object-position: 0 -145px;
+                    object-position: 0 -160px;
                 }
                 &--down{
                     object-position: 0 10px;
@@ -337,6 +334,25 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
     }
 }
 /* TABLET SCREEN SIZING */
+
+@media (min-width: 400px) {
+    .items {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .card {
+        min-width: 350px;
+        margin-bottom: 0;
+        &-image {
+            height: 150px;
+        }
+    }
+    .container {
+        margin: auto;
+    } 
+}
 
 @media (min-width: 705px) {
     .items {
