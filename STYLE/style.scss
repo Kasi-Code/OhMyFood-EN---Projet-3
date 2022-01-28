@@ -39,7 +39,7 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
     gap: 20px;
 }
 .m-center {
-    margin: auto;
+    // margin: auto;
 }
 
 // BLOCK
@@ -47,6 +47,7 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
 .container {
     max-width: 1000px;
     padding: 0 5% 0 5%;
+    // margin: auto;
 } 
 .header {
     &__logo {
@@ -123,10 +124,12 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
     }
 }
 .card {
-    min-height: 250px;
-    max-height: 250px;
-    max-width: 400px;
+    min-height: 245px;
+    max-height: 245px;
+    // max-width: 400px;
     margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
     &-image {
         height: 150px;
         position: relative;
@@ -134,12 +137,12 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
             height: 100%;
             width: 100%;
             object-fit: cover;
-            object-position: 0 -40px;
+            object-position: 0 -50px;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             &.ob-pos {
                 &--up{
-                    object-position: 0 -140px;
+                    object-position: 0 -145px;
                 }
                 &--down{
                     object-position: 0 10px;
@@ -349,7 +352,9 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
             height: 150px;
         }
     }
-
+    .container {
+        margin: auto;
+    } 
 }
 /* DESKTOP SCREEN SIZING */
 
