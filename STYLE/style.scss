@@ -44,7 +44,7 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
 .container {
     max-width: 1000px;
     padding: 0 5% 0 5%;
-    // margin: auto;
+    margin: auto;
 } 
 .header {
     &__logo {
@@ -123,23 +123,22 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
 .card {
     min-height: 245px;
     max-height: 245px;
-    // max-width: 400px;
+    max-width: 400px;
+    margin: auto;
     margin-bottom: 18px;
-    display: flex;
-    flex-direction: column;
     &-image {
-        height: 150px;
+        height: 135px;
         position: relative;
         img {
             height: 100%;
             width: 100%;
             object-fit: cover;
-            object-position: 0 -65px;
+            object-position: center;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             &.ob-pos {
                 &--up{
-                    object-position: 0 -160px;
+                    // object-position: 0 -160px;
                 }
                 &--down{
                     object-position: 0 10px;
@@ -337,9 +336,10 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
 
 @media (min-width: 400px) {
     .items {
+        display: flex;
         flex-direction: row;
-        justify-content: space-around;
         flex-wrap: wrap;
+        justify-content: space-around;
         gap: 20px;
     }
     .card {
@@ -349,28 +349,6 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
             height: 150px;
         }
     }
-    .container {
-        margin: auto;
-    } 
-}
-
-@media (min-width: 705px) {
-    .items {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .card {
-        min-width: 300px;
-        margin-bottom: 0;
-        &-image {
-            height: 150px;
-        }
-    }
-    .container {
-        margin: auto;
-    } 
 }
 /* DESKTOP SCREEN SIZING */
 
@@ -383,7 +361,4 @@ $drop-shadow: 0px 5px 15px -5px #bebebe;
     .instruction__option {
         min-width: 250px;
     }    
-    .card {
-        min-width: 410px;
-    }
 }

@@ -45,6 +45,7 @@ body {
 .container {
   max-width: 1000px;
   padding: 0 5% 0 5%;
+  margin: auto;
 }
 
 .header__logo {
@@ -138,18 +139,13 @@ body {
 .card {
   min-height: 245px;
   max-height: 245px;
+  max-width: 400px;
+  margin: auto;
   margin-bottom: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .card-image {
-  height: 150px;
+  height: 135px;
   position: relative;
 }
 
@@ -158,15 +154,10 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0 -65px;
-     object-position: 0 -65px;
+  -o-object-position: center;
+     object-position: center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-}
-
-.card-image img.ob-pos--up {
-  -o-object-position: 0 -160px;
-     object-position: 0 -160px;
 }
 
 .card-image img.ob-pos--down {
@@ -386,14 +377,17 @@ body {
 /* TABLET SCREEN SIZING */
 @media (min-width: 400px) {
   .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     gap: 20px;
   }
   .card {
@@ -402,33 +396,6 @@ body {
   }
   .card-image {
     height: 150px;
-  }
-  .container {
-    margin: auto;
-  }
-}
-
-@media (min-width: 705px) {
-  .items {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 20px;
-  }
-  .card {
-    min-width: 300px;
-    margin-bottom: 0;
-  }
-  .card-image {
-    height: 150px;
-  }
-  .container {
-    margin: auto;
   }
 }
 
@@ -442,9 +409,6 @@ body {
   }
   .instruction__option {
     min-width: 250px;
-  }
-  .card {
-    min-width: 410px;
   }
 }
 /*# sourceMappingURL=style.css.map */
