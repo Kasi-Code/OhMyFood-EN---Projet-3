@@ -1,0 +1,89 @@
+// TOOLS
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.center {
+    align-items: center;
+    justify-content: center;
+}
+.gap {
+    gap: 20px;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $gap;
+}
+.heart {
+    padding: 0 10px 10px 0;
+    height: 22.4px;
+    width: 22.3px;
+    font-size: 22.3px;
+    color: #353535;
+    a:hover {
+        color: #9356DC;
+    }
+    .heart__icon {
+      position: absolute;
+    }
+}
+.heart:hover .heart__icon-solid {
+    opacity: 1;
+  }
+.heart__icon-solid {
+  color: #9356DC;
+  transition: 0.3s opacity;
+  opacity: 0; 
+}
+.margin {
+    &--10 {
+        margin: 10px;
+        &.t {
+            margin: 10px 0 0 0;
+        }
+        &.r {
+            margin: 0 10px 0 0;
+        }
+        &.b {
+            margin: 0 0 10px 0;
+        }
+        &.l {
+            margin: 0 0 0 10px;
+        }
+        &.rl {
+            margin: 0 10px;
+        }
+        &.tb {
+            margin: 10px 0;
+        }
+    }
+    &--15 {
+        margin: 15px;
+        &.t {
+            margin: 15px 0 0 0;
+        }
+        &.r {
+            margin: 0 15px 0 0;
+        }
+        &.b {
+            margin: 0 0 15px 0;
+        }
+        &.l {
+            margin: 0 0 0 15px;
+        }
+        &.rl {
+            margin: 0 15px;
+        }
+        &.tb {
+            margin: 15px 0;
+        }
+    }
+
+}

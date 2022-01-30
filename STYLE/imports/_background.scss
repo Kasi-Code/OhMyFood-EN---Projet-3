@@ -1,0 +1,12 @@
+
+.bg {
+    &--white {
+        background-color: white;
+    }
+    &--light-grey {
+        background-color: $lighter-grey-BG;
+    }
+    &--grey {
+        background-color: $grey-BG;
+    }
+}
