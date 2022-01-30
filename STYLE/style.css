@@ -626,16 +626,22 @@ footer ul li a i {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  overflow: hidden;
 }
 
 .menu-card ul li a .list-description p {
   font-size: 13px;
   color: #353535;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .menu-card ul li a .price {
   width: 40px;
   margin-bottom: -24px;
+  padding-left: 7px;
   font-size: 13px;
   font-weight: bold;
 }
@@ -671,6 +677,19 @@ footer ul li a i {
   }
   .card {
     max-width: 344px;
+  }
+  .list-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .list-menu ul li {
+    width: 260px;
   }
 }
 /*# sourceMappingURL=style.css.map */
