@@ -524,12 +524,12 @@ footer ul li a i {
   margin-right: 10px;
 }
 
-.dish-picture {
+.menu-picture {
   height: 220px;
   width: 100%;
 }
 
-.dish-picture img {
+.menu-picture img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
