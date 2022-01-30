@@ -11,21 +11,21 @@ a {
 }
 
 @import 
-"./imports/header", 
 "./imports/variables", 
 "./imports/tools", 
-"./imports/card",
+"./imports/button",
+"./imports/plates",
+"./imports/title",
+"./imports/background",
 "./imports/container",
+"./imports/text",
+"./imports/header", 
 "./imports/location",
 "./imports/content",
-"./imports/text",
-"./imports/footer",
+"./imports/instruction",
 "./imports/restaurants",
-"./imports/background",
-"./imports/button",
-"./imports/title",
-"./imports/plates",
-"./imports/instruction"
+"./imports/card",
+"./imports/footer"
 ;
 
 /* TABLET SCREEN SIZING */

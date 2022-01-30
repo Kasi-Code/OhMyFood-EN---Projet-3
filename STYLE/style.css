@@ -13,30 +13,6 @@ a {
   text-decoration: none;
 }
 
-header {
-  position: relative;
-  -webkit-box-shadow: 0px 1px 5px 0px #adadad;
-          box-shadow: 0px 1px 5px 0px #adadad;
-}
-
-header div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 60px;
-}
-
-header div img {
-  height: 30px;
-  content: url("/images/logo/ohmyfood.png");
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,6 +139,235 @@ header div img {
   margin: 15px 0;
 }
 
+.btn.btn-main {
+  display: block;
+  color: white;
+  height: 50px;
+  width: 220px;
+  padding: 10px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 5px 15px -5px #757575;
+          box-shadow: 0px 5px 15px -5px #757575;
+}
+
+.plate__body {
+  padding: 5%;
+}
+
+.plate--5 {
+  height: 50px;
+}
+
+.plate--10 {
+  height: 100px;
+}
+
+.plate--15 {
+  height: 150px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.title--white {
+  color: white;
+}
+
+.bg--white {
+  background-color: white;
+}
+
+.bg--light-grey {
+  background-color: #f6f6f6;
+}
+
+.bg--grey {
+  background-color: #eaeaea;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 5% 0 5%;
+  margin: auto;
+}
+
+.text {
+  font-size: 15px;
+}
+
+.text--small {
+  font-size: 13px;
+}
+
+.text--small.thin {
+  font-weight: lighter;
+}
+
+.text--small.bold {
+  font-weight: bold;
+}
+
+.text--medium {
+  font-size: 15px;
+}
+
+.text--medium.thin {
+  font-weight: lighter;
+}
+
+.text--medium.bold {
+  font-weight: bold;
+}
+
+.text--large {
+  font-size: 20px;
+}
+
+.text--large.thin {
+  font-weight: lighter;
+}
+
+.text--large.bold {
+  font-weight: bold;
+}
+
+.text--thin {
+  font-weight: lighter;
+}
+
+.text--bold {
+  font-weight: bold;
+}
+
+.font--grey {
+  color: #353535;
+}
+
+.font--black {
+  color: black;
+}
+
+.font--white {
+  color: white;
+}
+
+header {
+  position: relative;
+  -webkit-box-shadow: 0px 1px 5px 0px #adadad;
+          box-shadow: 0px 1px 5px 0px #adadad;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+}
+
+header div img {
+  height: 30px;
+  content: url("/images/logo/ohmyfood.png");
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px 0 12px 0;
+}
+
+.content {
+  height: 290px;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 20px 10% 40px 10%;
+}
+
+.instruction {
+  padding: 40px 5% 55px 5%;
+}
+
+.instruction__list {
+  margin-top: 30px;
+  padding-left: 5%;
+}
+
+.instruction__list a {
+  font-size: 15px;
+  background-color: #f6f6f6;
+  min-height: 75px;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 5px 15px -5px #bebebe;
+          box-shadow: 0px 5px 15px -5px #bebebe;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+.instruction__list a:hover {
+  background-color: #9356DC1A;
+}
+
+.instruction__list a:hover i {
+  color: #9356DC;
+}
+
+.instruction__list a div {
+  color: white;
+  height: 25px;
+  width: 25px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  margin-left: -12.5px;
+  background-color: #9356DC;
+}
+
+.instruction__list a i {
+  color: #757575;
+  height: 22.3px;
+  width: 22.3px;
+  padding: 4px 0;
+  margin: 0 8px 0 12px;
+}
+
+.instruction__list a p {
+  font-weight: bold;
+}
+
+.restaurants {
+  padding: 50px 0;
+}
+
+.restaurants h1 {
+  margin-bottom: 25px;
+}
+
 .card {
   max-height: 245px;
   width: 100%;
@@ -243,91 +448,6 @@ header div img {
           transform: scale(1.01);
 }
 
-.container {
-  max-width: 1000px;
-  padding: 0 5% 0 5%;
-  margin: auto;
-}
-
-.location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 12px 0 12px 0;
-}
-
-.content {
-  height: 290px;
-  text-align: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 20px 10% 40px 10%;
-}
-
-.text {
-  font-size: 15px;
-}
-
-.text--small {
-  font-size: 13px;
-}
-
-.text--small.thin {
-  font-weight: lighter;
-}
-
-.text--small.bold {
-  font-weight: bold;
-}
-
-.text--medium {
-  font-size: 15px;
-}
-
-.text--medium.thin {
-  font-weight: lighter;
-}
-
-.text--medium.bold {
-  font-weight: bold;
-}
-
-.text--large {
-  font-size: 20px;
-}
-
-.text--large.thin {
-  font-weight: lighter;
-}
-
-.text--large.bold {
-  font-weight: bold;
-}
-
-.text--thin {
-  font-weight: lighter;
-}
-
-.text--bold {
-  font-weight: bold;
-}
-
-.font--grey {
-  color: #353535;
-}
-
-.font--black {
-  color: black;
-}
-
-.font--white {
-  color: white;
-}
-
 footer {
   height: 180px;
   background-color: #353535;
@@ -369,126 +489,6 @@ footer ul li a {
 footer ul li a i {
   width: 15px;
   margin-right: 10px;
-}
-
-.restaurants {
-  padding: 50px 0;
-}
-
-.restaurants h1 {
-  margin-bottom: 25px;
-}
-
-.bg--white {
-  background-color: white;
-}
-
-.bg--light-grey {
-  background-color: #f6f6f6;
-}
-
-.bg--grey {
-  background-color: #eaeaea;
-}
-
-.btn.btn-main {
-  display: block;
-  color: white;
-  height: 50px;
-  width: 220px;
-  padding: 10px;
-  line-height: 25px;
-  text-align: center;
-  border-radius: 25px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: bold;
-  -webkit-box-shadow: 0px 5px 15px -5px #757575;
-          box-shadow: 0px 5px 15px -5px #757575;
-}
-
-.title {
-  font-size: 20px;
-}
-
-.title--white {
-  color: white;
-}
-
-.plate__body {
-  padding: 5%;
-}
-
-.plate--5 {
-  height: 50px;
-}
-
-.plate--10 {
-  height: 100px;
-}
-
-.plate--15 {
-  height: 150px;
-}
-
-.instruction {
-  padding: 40px 5% 55px 5%;
-}
-
-.instruction__list {
-  margin-top: 30px;
-  padding-left: 5%;
-}
-
-.instruction__list a {
-  font-size: 15px;
-  background-color: #f6f6f6;
-  min-height: 75px;
-  width: 100%;
-  max-width: 520px;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 5px 15px -5px #bebebe;
-          box-shadow: 0px 5px 15px -5px #bebebe;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: black;
-}
-
-.instruction__list a:hover {
-  background-color: #9356DC1A;
-}
-
-.instruction__list a:hover i {
-  color: #9356DC;
-}
-
-.instruction__list a div {
-  color: white;
-  height: 25px;
-  width: 25px;
-  padding: 3px 8px;
-  border-radius: 50%;
-  margin-left: -12.5px;
-  background-color: #9356DC;
-}
-
-.instruction__list a i {
-  color: #757575;
-  height: 22.3px;
-  width: 22.3px;
-  padding: 4px 0;
-  margin: 0 8px 0 12px;
-}
-
-.instruction__list a p {
-  font-weight: bold;
 }
 
 /* TABLET SCREEN SIZING */
