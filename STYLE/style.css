@@ -9,6 +9,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,6 +216,10 @@ header div img {
   background-color: #9356DC1A;
 }
 
+.instruction__list a:hover i {
+  color: #9356DC;
+}
+
 .instruction__list a div {
   color: white;
   height: 25px;
@@ -245,6 +253,7 @@ header div img {
 .card {
   max-height: 245px;
   width: 100%;
+  border: none;
 }
 
 .card-image {
