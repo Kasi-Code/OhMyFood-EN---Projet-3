@@ -56,33 +56,6 @@ a {
   gap: 20px;
 }
 
-.heart {
-  padding: 0 10px 10px 0;
-  height: 22.4px;
-  width: 22.3px;
-  font-size: 22.3px;
-  color: #353535;
-}
-
-.heart a:hover {
-  color: #9356DC;
-}
-
-.heart .heart__icon {
-  position: absolute;
-}
-
-.heart:hover .heart__icon-solid {
-  opacity: 1;
-}
-
-.heart__icon-solid {
-  color: #9356DC;
-  -webkit-transition: 0.3s opacity;
-  transition: 0.3s opacity;
-  opacity: 0;
-}
-
 .margin--10 {
   margin: 10px;
 }
@@ -181,6 +154,19 @@ a {
   color: white;
 }
 
+.title--xl {
+  font-size: 25px;
+}
+
+.menu-title {
+  font-size: 25px;
+  font-family: 'Shrikhand', cursive;
+}
+
+.menu-title--white {
+  color: white;
+}
+
 .bg--white {
   background-color: white;
 }
@@ -239,6 +225,18 @@ a {
   font-weight: bold;
 }
 
+.text--xl {
+  font-size: 25px;
+}
+
+.text--xl.thin {
+  font-weight: lighter;
+}
+
+.text--xl.bold {
+  font-weight: bold;
+}
+
 .text--thin {
   font-weight: lighter;
 }
@@ -281,6 +279,33 @@ header div {
 header div img {
   height: 30px;
   content: url("/images/logo/ohmyfood.png");
+}
+
+.heart {
+  text-align: center;
+  height: 22.4px;
+  width: 22.3px;
+  font-size: 22.3px;
+  color: #353535;
+}
+
+.heart a:hover {
+  color: #9356DC;
+}
+
+.heart .heart__icon {
+  position: absolute;
+}
+
+.heart:hover .heart__icon-solid {
+  opacity: 1;
+}
+
+.heart__icon-solid {
+  color: #9356DC;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+  opacity: 0;
 }
 
 .location {
@@ -443,6 +468,10 @@ header div img {
   font-weight: lighter;
 }
 
+.card-description a {
+  margin-right: 25px;
+}
+
 .card:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
@@ -491,6 +520,104 @@ footer ul li a i {
   margin-right: 10px;
 }
 
+.dish-picture {
+  height: 220px;
+  width: 100%;
+}
+
+.dish-picture img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.menu-card {
+  width: 100%;
+  position: relative;
+  margin-top: -40px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #f6f6f6;
+}
+
+.menu-card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-card .btn {
+  margin: 45px auto 45px auto;
+  width: 185px;
+}
+
+.menu-card .heart {
+  margin: auto;
+}
+
+.menu-card .list-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu-card .list-title {
+  font-weight: lighter;
+}
+
+.menu-card .list-title h4 {
+  margin-bottom: 15px;
+}
+
+.menu-card .list-title span {
+  -webkit-text-decoration: underline solid #99E2D0 3.5px;
+          text-decoration: underline solid #99E2D0 3.5px;
+  text-underline-offset: 6px;
+}
+
+.menu-card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.menu-card ul li a {
+  display: block;
+  margin-top: 15px;
+  background-color: white;
+  min-height: 70px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 15px -5px #bebebe;
+          box-shadow: 0px 5px 15px -5px #bebebe;
+}
+
+.menu-card ul li a .list-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /* TABLET SCREEN SIZING */
 @media (min-width: 600px) {
   .instruction__list {
@@ -498,6 +625,10 @@ footer ul li a i {
   }
   .card {
     max-width: 250px;
+  }
+  .dish-picture {
+    max-width: 1000px;
+    margin: auto;
   }
 }
 

@@ -10,6 +10,8 @@ a {
     text-decoration: none;
 }
 
+// TOOLS and UTILITIES
+
 @import 
 "./imports/variables", 
 "./imports/tools", 
@@ -19,13 +21,26 @@ a {
 "./imports/background",
 "./imports/container",
 "./imports/text",
-"./imports/header", 
+"./imports/header",
+"./imports/heart"
+;
+
+// HOMEPAGE
+
+@import
 "./imports/location",
 "./imports/content",
 "./imports/instruction",
 "./imports/restaurants",
 "./imports/card",
 "./imports/footer"
+;
+
+// Menu - La palette du goût
+
+@import
+"./imports/dish-picture",
+"./imports/menu-card"
 ;
 
 /* TABLET SCREEN SIZING */
@@ -36,6 +51,10 @@ a {
     }
     .card {
         max-width: 250px;
+    }
+    .dish-picture {
+        max-width: 1000px;
+        margin: auto;
     }
 }
 /* DESKTOP SCREEN SIZING */

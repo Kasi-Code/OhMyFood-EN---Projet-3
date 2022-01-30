@@ -29,6 +29,15 @@
             font-weight: $bold-text;
         }          
     }
+    &--xl {
+        font-size: $xl-text;
+        &.thin {
+            font-weight: $thin-text;
+        }
+        &.bold {
+            font-weight: $bold-text;
+        }          
+    }
     &--thin {
         font-weight: $thin-text;
     }

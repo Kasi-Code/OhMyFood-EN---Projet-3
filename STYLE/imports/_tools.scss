@@ -21,27 +21,6 @@
     justify-content: center;
     gap: $gap;
 }
-.heart {
-    padding: 0 10px 10px 0;
-    height: 22.4px;
-    width: 22.3px;
-    font-size: 22.3px;
-    color: #353535;
-    a:hover {
-        color: #9356DC;
-    }
-    .heart__icon {
-      position: absolute;
-    }
-}
-.heart:hover .heart__icon-solid {
-    opacity: 1;
-  }
-.heart__icon-solid {
-  color: #9356DC;
-  transition: 0.3s opacity;
-  opacity: 0; 
-}
 .margin {
     &--10 {
         margin: 10px;

@@ -4,4 +4,14 @@
     &--white {
         color: white;
     }
+    &--xl {
+        font-size: $xl-text;
+    }
+}
+.menu-title {
+    font-size: $xl-text;
+    font-family: 'Shrikhand', cursive;
+    &--white {
+        color: white;
+    }
 }
