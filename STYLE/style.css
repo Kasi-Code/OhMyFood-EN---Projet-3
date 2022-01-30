@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+main {
+  min-width: 300px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,16 +560,10 @@ footer ul li a i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  margin-bottom: 30px;
-}
-
-.menu-card .btn {
-  margin: 45px auto 45px auto;
-  width: 185px;
 }
 
 .menu-card .heart {
-  margin: auto;
+  margin-right: 30px;
 }
 
 .menu-card .list-menu {
@@ -578,10 +576,7 @@ footer ul li a i {
 
 .menu-card .list-title {
   font-weight: lighter;
-}
-
-.menu-card .list-title h4 {
-  margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 .menu-card .list-title span {
@@ -592,20 +587,32 @@ footer ul li a i {
 
 .menu-card ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   margin-top: 10px;
   width: 100%;
 }
 
 .menu-card ul li a {
-  display: block;
+  padding: 15px 13px;
   margin-top: 15px;
   background-color: white;
   min-height: 70px;
   border-radius: 15px;
   -webkit-box-shadow: 0px 5px 15px -5px #bebebe;
           box-shadow: 0px 5px 15px -5px #bebebe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-card ul li a div {
+  margin: 0;
 }
 
 .menu-card ul li a .list-description {
@@ -616,6 +623,30 @@ footer ul li a i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menu-card ul li a .list-description p {
+  font-size: 13px;
+  color: #353535;
+}
+
+.menu-card ul li a .price {
+  width: 40px;
+  margin-bottom: -24px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.menu-card ul li a:visited {
+  color: black;
+}
+
+.menu-card .btn {
+  margin: 45px auto 45px auto;
+  width: 185px;
 }
 
 /* TABLET SCREEN SIZING */

@@ -13,48 +13,17 @@
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        margin-bottom: 30px;
-    }
-    .btn {
-        margin: 45px auto 45px auto;
-        width: 185px;
     }
     .heart {
-        margin: auto;
+        margin-right: 30px;
     }
     .list-menu {
         display: flex;
         flex-wrap: wrap;
     }
-    .list-title {
-        font-weight: $thin-text;
-        h4 {
-            margin-bottom: 15px;
-        }
-        span {
-            text-decoration: underline solid #99E2D0 3.5px;
-            text-underline-offset: 6px;
-        }
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        margin-top: 10px;
-        width: 100%;
-        li {
-            a {
-                display: block;
-                margin-top: 15px;
-                background-color: white;
-                min-height: 70px;
-                border-radius: 15px;
-                box-shadow: $drop-shadow;
-                .list-description {
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
-        }
+    @import "./list-menu";
+    .btn {
+        margin: 45px auto 45px auto;
+        width: 185px;
     }
 }

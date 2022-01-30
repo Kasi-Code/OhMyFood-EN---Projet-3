@@ -1,0 +1,48 @@
+
+    .list-title {
+        font-weight: $thin-text;
+        margin-top: 30px;
+        span {
+            text-decoration: underline solid #99E2D0 3.5px;
+            text-underline-offset: 6px;
+        }
+    }
+    ul {
+        list-style-type: none;
+        margin-top: 10px;
+        width: 100%;
+        li {
+            a {
+                padding: 15px 13px;
+                margin-top: 15px;
+                background-color: white;
+                min-height: 70px;
+                border-radius: 15px;
+                box-shadow: $drop-shadow;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                div {
+                    margin: 0;
+                }
+                .list-description {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    p {
+                        font-size: $small-text;
+                        color: $grey-text;
+                    }
+                }
+                .price {
+                    width: 40px; 
+                    margin-bottom: -24px;
+                    font-size: $small-text;
+                    font-weight: $bold-text;
+                }
+            }
+            a:visited {
+                color: black;
+            }
+        }
+    }
