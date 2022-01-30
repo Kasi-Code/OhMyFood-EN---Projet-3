@@ -39,6 +39,33 @@ $gap: 20px;
 .gap {
     gap: 20px;
 }
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $gap;
+}
+.heart {
+    padding: 0 10px 10px 0;
+    height: 22.4px;
+    width: 22.3px;
+    font-size: 22.3px;
+    color: #353535;
+    a:hover {
+        color: #9356DC;
+    }
+    .heart__icon {
+      position: absolute;
+    }
+}
+.heart:hover .heart__icon-solid {
+    opacity: 1;
+  }
+.heart__icon-solid {
+  color: #9356DC;
+  transition: 0.3s opacity;
+  opacity: 0; 
+}
 .margin {
     &--10 {
         margin: 10px;
@@ -88,7 +115,7 @@ $gap: 20px;
 // BLOCK
 
 .container {
-    max-width: 1100px;
+    max-width: 1000px;
     padding: 0 5% 0 5%;
     margin: auto;
 } 
@@ -127,17 +154,12 @@ header {
 .instruction__list {
     margin-top: 30px;
     padding-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: $gap;
     a {
         font-size: $medium-text;
         background-color: $lighter-grey-BG;
         min-height: 75px;
-        min-width: 285px;
         width: 100%;
-        // max-width: 320px;
+        max-width: 520px;
         border-radius: 25px;
         box-shadow: $drop-shadow;
         text-decoration: none;
@@ -165,12 +187,13 @@ header {
         }
         p {
             font-weight: $bold-text;
+            // white-space: nowrap;
         }
     }
 }
 .restaurants {
     padding: 50px 0;
-    &__title {
+    h1 {
         margin-bottom: 25px;
     }
 }
@@ -197,6 +220,8 @@ header {
             }
         }
         div {
+            font-size: $small-text;
+            font-weight: $bold-text;
             color: #008766;
             width: 80px;
             height: 30px;
@@ -214,43 +239,20 @@ header {
         width: 100%;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
+        display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 10px;
         box-shadow: $drop-shadow;
         .info {
-            &-title {
+            h2 {
                 font-size: $medium-text;
-                // font-weight: $bold-text;
+                margin-bottom: 3px;
             }
-            &-location {
+            p {
                 font-size: $medium-text;
                 font-weight: $thin-text;
             }
-        }
-        .heart {
-            padding: 0 10px 10px 0;
-            height: 22.4px;
-            width: 22.3px;
-            font-size: 22.3px;
-            // text-decoration: none;
-            color: #353535;
-            a:hover {
-                color: #9356DC;
-            }
-            .heart__icon {
-              position: absolute;
-            }
-        }
-        .heart:hover .heart__icon-solid {
-            opacity: 1;
-            // display: block;
-          }
-        .heart__icon-solid {
-          color: #9356DC;
-          transition: 0.3s opacity;
-          opacity: 0; 
-        //   display: none;
         }
     }
 }
@@ -388,6 +390,9 @@ footer {
 /* TABLET SCREEN SIZING */
 
 @media (min-width: 600px) {
+    .instruction__list {        
+        padding-left: 0;
+    }
     .card {
         max-width: 250px;
     }
@@ -395,14 +400,13 @@ footer {
 /* DESKTOP SCREEN SIZING */
 
 @media (min-width: 880px) {
-    .instruction__list {        
-        padding-left: 0;
+    .instruction__list {       
+        a {
+        font-size: $small-text;
+        max-width: 240px;
+        }  
     }
-    .instruction__option {
-        // min-width: 250px;
-        max-width: 270px;
-    }    
     .card {
-        max-width: 350px;
+        max-width: 344px;
     }
 }
