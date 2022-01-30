@@ -134,6 +134,11 @@ main {
           box-shadow: 0px 5px 15px -5px #757575;
 }
 
+.home-btn {
+  color: #353535;
+  font-size: 20px;
+}
+
 .plate__body {
   padding: 5%;
 }
@@ -185,7 +190,7 @@ main {
 
 .container {
   max-width: 1000px;
-  padding: 0 5% 0 5%;
+  padding: 0 15px 0 15px;
   margin: auto;
 }
 
@@ -278,11 +283,21 @@ header div {
       -ms-flex-pack: center;
           justify-content: center;
   height: 60px;
+  position: relative;
+}
+
+header div .home-btn {
+  position: absolute;
+  left: 25px;
 }
 
 header div img {
   height: 30px;
   content: url("/images/logo/ohmyfood.png");
+}
+
+header a:visited {
+  color: #353535;
 }
 
 .heart {

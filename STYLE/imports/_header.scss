@@ -7,14 +7,17 @@ header {
         align-items: center;
         justify-content: center;
         height: 60px;  
+        position: relative;
+        .home-btn {
+            position: absolute;
+            left: 25px;
+        }
         img {
             height: 30px; 
-            // width: 200px;
             content: url("/images/logo/ohmyfood.png");
-            // background-image: url("/images/logo/ohmyfood.png");
-            // background-position: center;
-            // background-repeat: no-repeat;
-            // background-size: contain;
         }
+    }
+    a:visited {
+        color: $grey-text;
     }
 }
