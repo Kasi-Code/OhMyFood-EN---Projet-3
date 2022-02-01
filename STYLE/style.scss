@@ -8,6 +8,10 @@ body {
 }
 a {
     text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
 }
 main {
     min-width: 300px
@@ -48,40 +52,8 @@ main {
 
 /* TABLET SCREEN SIZING */
 
-@media (min-width: 600px) {
-    .instruction__list {        
-        padding-left: 0;
-    }
-    .card {
-        max-width: 250px;
-    }
-    .dish-picture {
-        max-width: 1000px;
-        margin: auto;
-    }
-}
+@media (min-width: 600px) {}
 
 /* DESKTOP SCREEN SIZING */
 
-@media (min-width: 880px) {
-    .instruction__list {       
-        a {
-        font-size: $small-text;
-        max-width: 240px;
-        }  
-    }
-    .card {
-        max-width: 344px;
-    }
-    .list-menu {
-        // ul {
-        //     display: flex;
-        //     flex-wrap: wrap;
-        //     justify-content: space-between;
-        //     // gap: $gap;
-        //     li {
-        //     width: 260px;
-        //     }
-        // }
-    }
-}
+@media (min-width: 880px) {}

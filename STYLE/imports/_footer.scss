@@ -2,6 +2,9 @@
 footer {
     height: 180px;
     background-color: #353535;
+    a:visited {
+        color: white;
+    }
     div {
         // margin-bottom: 5px;
         display: flex;

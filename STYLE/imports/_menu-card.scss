@@ -8,6 +8,9 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: $lighter-grey-BG;
+    .menu-title {
+        text-align: left
+    }
     div {
         display: flex;
         align-items: center;
