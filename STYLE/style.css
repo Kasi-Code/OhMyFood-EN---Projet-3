@@ -347,7 +347,7 @@ header a:visited {
 }
 
 .instruction {
-  padding: 40px 5% 55px 5%;
+  padding: 40px 0 55px 0;
 }
 
 .instruction__list {
@@ -589,6 +589,20 @@ footer ul li a i {
       flex-wrap: wrap;
 }
 
+.menu-card .list-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
 .menu-card .list-title {
   font-weight: lighter;
   margin-top: 30px;
@@ -665,6 +679,12 @@ footer ul li a i {
   color: black;
 }
 
+@media (min-width: 680px) {
+  .menu-card .list-category {
+    max-width: 314px;
+  }
+}
+
 .menu-card .btn {
   margin: 45px auto 45px auto;
   width: 185px;
@@ -692,19 +712,6 @@ footer ul li a i {
   }
   .card {
     max-width: 344px;
-  }
-  .list-menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .list-menu ul li {
-    width: 260px;
   }
 }
 /*# sourceMappingURL=style.css.map */

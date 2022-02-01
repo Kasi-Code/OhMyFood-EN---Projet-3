@@ -1,4 +1,10 @@
 
+    .list-category {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }       
     .list-title {
         font-weight: $thin-text;
         margin-top: 30px;
@@ -51,4 +57,10 @@
                 color: black;
             }
         }
+    }
+
+    @media (min-width: 680px) {
+        .list-category {
+            max-width: 314px;
+        }       
     }
