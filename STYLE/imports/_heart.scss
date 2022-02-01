@@ -6,7 +6,7 @@
     font-size: 22.3px;
     color: #353535;
     a:hover {
-        color: #9356DC;
+        color: $primary;
     }
     .heart__icon {
       position: absolute;
@@ -16,7 +16,7 @@
     opacity: 1;
   }
 .heart__icon-solid {
-  color: #9356DC;
+  color: $primary;
   transition: 0.3s opacity;
   opacity: 0; 
 }

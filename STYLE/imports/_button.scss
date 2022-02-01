@@ -9,7 +9,7 @@
         line-height: 25px;
         text-align: center;
         border-radius: 25px;
-        background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+        background: linear-gradient(to right bottom, $secondary, $primary);
         text-decoration: none;
         font-size: $medium-text;
         font-weight: $bold-text;
