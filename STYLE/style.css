@@ -266,6 +266,11 @@ header {
 }
 
 header div {
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,6 +346,11 @@ header a:visited {
 
 .instruction-con {
   padding: 40px 0 55px 0;
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .instruction {
@@ -408,14 +418,14 @@ header a:visited {
 
 /* TABLET SCREEN SIZING */
 @media (min-width: 600px) {
-  .instruction__list {
+  .instruction {
     padding-left: 0;
   }
 }
 
 /* DESKTOP SCREEN SIZING */
 @media (min-width: 880px) {
-  .instruction__list a {
+  .instruction a {
     font-size: 13px;
     max-width: 240px;
   }
@@ -548,7 +558,15 @@ footer a:visited {
   color: white;
 }
 
-footer div {
+footer .footer {
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .footer__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,7 +577,7 @@ footer div {
   padding: 25px 0 15px 0;
 }
 
-footer div img {
+footer .footer__logo img {
   height: 15px;
   width: 100px;
   content: url("/images/logo/ohmyfood.png");
@@ -567,31 +585,31 @@ footer div img {
           filter: invert(100%);
 }
 
-footer ul {
+footer .footer__list {
   list-style-type: none;
 }
 
-footer ul li {
+footer .footer__list li {
   margin-bottom: 3px;
 }
 
-footer ul li a {
+footer .footer__list li a {
   color: white;
   text-decoration: none;
   font-size: 13px;
 }
 
-footer ul li a i {
+footer .footer__list li a i {
   width: 15px;
   margin-right: 10px;
 }
 
-.menu-picture {
+.menu__picture {
   height: 220px;
   width: 100%;
 }
 
-.menu-picture img {
+.menu__picture img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -600,7 +618,7 @@ footer ul li a i {
      object-position: center;
 }
 
-.menu-card {
+.menu__card {
   width: 100%;
   position: relative;
   margin-top: -40px;
@@ -609,13 +627,14 @@ footer ul li a i {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   background-color: #f6f6f6;
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.menu-card .menu-title {
-  text-align: left;
-}
-
-.menu-card div {
+.menu__card__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,25 +647,27 @@ footer ul li a i {
   text-align: center;
 }
 
-.menu-card .heart {
+.menu__card__title__header {
+  text-align: left;
+  font-family: 'Shrikhand', cursive;
+}
+
+.menu__card__title .heart {
   margin-right: 30px;
 }
 
-.menu-card .list-menu {
+.menu__card__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.menu-card .list-menu {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.menu-card .list-category {
+.menu__card__list__category {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,24 +681,24 @@ footer ul li a i {
   width: 100%;
 }
 
-.menu-card .list-title {
+.menu__card__list__category__title {
   font-weight: lighter;
   margin-top: 30px;
 }
 
-.menu-card .list-title span {
+.menu__card__list__category__title span {
   -webkit-text-decoration: underline solid #99E2D0 3.5px;
           text-decoration: underline solid #99E2D0 3.5px;
   text-underline-offset: 6px;
 }
 
-.menu-card ul {
+.menu__card__list__category__item {
   list-style-type: none;
   margin-top: 10px;
   width: 100%;
 }
 
-.menu-card ul li a {
+.menu__card__list__category__item li a {
   padding: 15px 13px;
   margin-top: 15px;
   background-color: white;
@@ -697,11 +718,11 @@ footer ul li a i {
           justify-content: space-between;
 }
 
-.menu-card ul li a div {
+.menu__card__list__category__item li a div {
   margin: 0;
 }
 
-.menu-card ul li a .list-description {
+.menu__card__list__category__item li a .menu__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -716,7 +737,14 @@ footer ul li a i {
   text-align: left;
 }
 
-.menu-card ul li a .list-description p {
+.menu__card__list__category__item li a .menu__description__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.menu__card__list__category__item li a .menu__description__detail {
   font-size: 13px;
   color: #353535;
   white-space: nowrap;
@@ -725,7 +753,7 @@ footer ul li a i {
   max-width: 100%;
 }
 
-.menu-card ul li a .price {
+.menu__card__list__category__item li a .menu-price {
   width: 40px;
   margin-bottom: -24px;
   padding-left: 7px;
@@ -733,17 +761,17 @@ footer ul li a i {
   font-weight: bold;
 }
 
-.menu-card ul li a:visited {
+.menu__card__list__category__item li a:visited {
   color: black;
 }
 
 @media (min-width: 680px) {
-  .menu-card .list-category {
+  .menu__card__list__category {
     max-width: 314px;
   }
 }
 
-.menu-card .btn {
+.menu__card .btn {
   margin: 45px auto 45px auto;
   width: 185px;
 }

@@ -3,6 +3,7 @@ header {
     position: relative;
     @include drop-shadow("header"); // <--- MUST APPLY RELATIVE for shadow to show
     div {
+        @include container;
         display: flex;
         align-items: center;
         justify-content: center;

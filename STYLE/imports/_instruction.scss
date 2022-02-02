@@ -1,6 +1,7 @@
 
 .instruction-con {
     padding: 40px 0 55px 0;
+    @include container;
 }
 .instruction {
     // padding: 40px 0 55px 0;
@@ -51,7 +52,7 @@
 /* TABLET SCREEN SIZING */
 
 @media (min-width: 600px) {
-    .instruction__list {        
+    .instruction {        
         padding-left: 0;
     }
 }
@@ -59,7 +60,7 @@
 /* DESKTOP SCREEN SIZING */
 
 @media (min-width: 880px) {
-    .instruction__list {       
+    .instruction {       
         a {
         font-size: $small-text;
         max-width: 240px;

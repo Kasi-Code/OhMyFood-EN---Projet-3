@@ -1,0 +1,47 @@
+
+.menu {
+    &__picture {
+        height: 220px;
+        width: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    &__card {
+        width: 100%;
+        position: relative;
+        margin-top: -40px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: $lighter-grey-BG;
+        @include container;
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            &__header {
+                text-align: left;
+                font-family: 'Shrikhand', cursive;
+            }
+            .heart {
+                margin-right: 30px;
+            }
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @import "list-menu";
+        }
+        .btn {
+            margin: 45px auto 45px auto;
+            width: 185px;
+        }
+    }
+}

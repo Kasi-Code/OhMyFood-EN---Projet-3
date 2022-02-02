@@ -5,30 +5,33 @@ footer {
     a:visited {
         color: white;
     }
-    div {
-        // margin-bottom: 5px;
-        display: flex;
-        flex-direction: column;
-        padding: 25px 0 15px 0;
-        img {
-            height: 15px;
-            width: 100px;
-            content: url("/images/logo/ohmyfood.png");
-            filter: invert(100%);
+    .footer {
+        @include container;
+        &__logo {
+            // margin-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 25px 0 15px 0;
+            img {
+                height: 15px;
+                width: 100px;
+                content: url("/images/logo/ohmyfood.png");
+                filter: invert(100%);
+            }
         }
-    }
-    ul {
-        list-style-type: none;
-        li {
-        margin-bottom: 3px;
-        }
-        li a {
-            color: white;
-            text-decoration: none;
-            font-size: $small-text;
-            i {
-                width: 15px;
-                margin-right: 10px;
+        &__list {
+            list-style-type: none;
+            li {
+            margin-bottom: 3px;
+            }
+            li a {
+                color: white;
+                text-decoration: none;
+                font-size: $small-text;
+                i {
+                    width: 15px;
+                    margin-right: 10px;
+                }
             }
         }
     }
