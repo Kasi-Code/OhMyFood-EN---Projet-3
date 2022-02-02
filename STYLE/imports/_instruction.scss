@@ -1,11 +1,13 @@
 
-.instruction {
+.instruction-con {
     padding: 40px 0 55px 0;
 }
-.instruction__list {
+.instruction {
+    // padding: 40px 0 55px 0;
     margin-top: 30px;
     padding-left: 5%;
-    a {
+    @include list-layout;
+    &__link {
         font-size: $medium-text;
         background-color: $lighter-grey-BG;
         min-height: 75px;
@@ -17,14 +19,8 @@
         align-items: center;
         color: black;
         @include drop-shadow("light");
-        &:hover {
-            i {
-                color: $color-primary;
-            }
-            background-color: $color-primary-2;
-        }
-        div {
-            color: rgb(255, 255, 255);
+        &__number {
+            color: white;
             height: 25px; 
             width: 25px;
             padding: 3px 8px;
@@ -32,16 +28,22 @@
             margin-left: -12.5px;
             background-color: $color-primary;
         }
-        i {
+        &__icon {
             color: #757575;
             height: 22.3px;
             width: 22.3px;
             padding: 4px 0;
             margin: 0 8px 0 12px;
         }
-        p {
+        &__text {
             font-weight: $bold-text;
             // white-space: nowrap;
+        }
+        &:hover {
+            .instruction__link__icon {
+                color: $color-primary;
+            }
+            background-color: $color-primary-2;
         }
     }
 }

@@ -28,7 +28,7 @@
                 min-height: 70px;
                 // max-height: 70px;
                 border-radius: 15px;
-                box-shadow: $drop-shadow;
+                @include drop-shadow("light");
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;

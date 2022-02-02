@@ -15,11 +15,11 @@
 .gap {
     gap: 20px;
 }
-.list {
+@mixin list-layout {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: $gap;
+    gap: $gap;    
 }
 .margin {
     &--10 {
