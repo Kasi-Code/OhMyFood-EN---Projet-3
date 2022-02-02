@@ -375,7 +375,8 @@ header a:visited {
       -ms-flex-align: center;
           align-items: center;
   color: black;
-  text-shadow: 0px 5px 15px -5px #bebebe;
+  -webkit-box-shadow: 0px 5px 15px -5px #bebebe;
+          box-shadow: 0px 5px 15px -5px #bebebe;
 }
 
 .instruction__list a:hover {
