@@ -1,7 +1,7 @@
 
 header {
     position: relative;
-    box-shadow: 0px 1px 5px 0px #adadad; // <--- MUST APPLY RELATIVE
+    @include drop-shadow("header"); // <--- MUST APPLY RELATIVE for shadow to show
     div {
         display: flex;
         align-items: center;

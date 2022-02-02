@@ -49,7 +49,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 10px;
-        box-shadow: $drop-shadow;
+        @include drop-shadow("light");
         .info {
             h2 {
                 font-size: $medium-text;
@@ -66,7 +66,7 @@
     }
 }
 .card:hover {
-    transform: scale(1.01);
+    @include trans-scale;
 }
 
 /* TABLET SCREEN SIZING */

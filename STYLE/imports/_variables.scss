@@ -20,11 +20,32 @@ $gap: 20px;
 
 // MIXIN NOT WORKING!!
 
-$drop-shadow: 0px 5px 15px -5px #bebebe;
+$drop-shadow: 0px 5px 15px -5px #bebebe; // <-- Short-hand
 $drop-shadow-colour: #bebebe;
+$drop-shadow-s-colour: #757575;
 $drop-shadow-size: 0px 5px 15px -5px;
-$drop-shadow-s: 0px 5px 15px -5px #757575;
+$drop-shadow-size-header: 0px 1px 5px 0px;
 
-@mixin list-shadow {
-    box-shadow: $drop-shadow;
+@mixin drop-shadow($c) {
+
+    $colour: "";
+    $size: "";
+
+    @if $c == "darker" or $c == "dark" or $c == "d" {
+        $size: $drop-shadow-size;
+        $colour: $drop-shadow-s-colour;
+    } @else if $c == "header" or $c == "head" or $c == "h" {
+        $size: $drop-shadow-size-header;
+        $colour: $drop-shadow-colour;
+    } @else {
+        $size: $drop-shadow-size;
+        $colour: $drop-shadow-colour;
+    }
+
+    box-shadow: $size $colour;
+
+}
+
+@mixin trans-scale {
+    transform: scale(1.01);    
 }

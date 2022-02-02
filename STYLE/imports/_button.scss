@@ -13,7 +13,7 @@
         text-decoration: none;
         font-size: $medium-text;
         font-weight: $bold-text;
-        box-shadow: $drop-shadow-s;
+        @include drop-shadow("dark");
     }
 }
 .home-btn {
