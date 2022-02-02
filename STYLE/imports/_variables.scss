@@ -4,7 +4,7 @@ $color-primary: #9356DC;
 $color-primary-2: #9356DC1A;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$color-tertiary-2: #008766;
+$color-tertiary-darker: #008766;
 $white-text: white;
 $grey-text: #353535;
 $black-text: black;
@@ -25,6 +25,6 @@ $drop-shadow-colour: #bebebe;
 $drop-shadow-size: 0px 5px 15px -5px;
 $drop-shadow-s: 0px 5px 15px -5px #757575;
 
-.list-shadow {
+@mixin list-shadow {
     text-shadow: $drop-shadow;
 }
