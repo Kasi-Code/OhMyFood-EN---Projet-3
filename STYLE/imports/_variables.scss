@@ -25,6 +25,6 @@ $drop-shadow-colour: #bebebe;
 $drop-shadow-size: 0px 5px 15px -5px;
 $drop-shadow-s: 0px 5px 15px -5px #757575;
 
-@mixin list-shadow {
+.list-shadow {
     text-shadow: $drop-shadow;
 }

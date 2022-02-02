@@ -17,7 +17,7 @@
         align-items: center;
         color: black;
         box-shadow: $drop-shadow;
-        @include list-shadow; // <-- WHY NOT WORKING??
+        // @extend list-shadow; // <-- WHY NOT WORKING??
         &:hover {
             i {
                 color: $color-primary;
