@@ -421,18 +421,24 @@ header a:visited {
   }
 }
 
-.restaurants {
+.restaurants-con {
   padding: 50px 0;
 }
 
-.restaurants h1 {
+.restaurants-con h1 {
   margin-bottom: 25px;
 }
 
-.list {
+.restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  gap: 20px;
 }
 
 .card {
@@ -445,12 +451,12 @@ header a:visited {
   color: black;
 }
 
-.card-image {
+.card__link__image {
   height: 135px;
   position: relative;
 }
 
-.card-image img {
+.card__link__image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -461,12 +467,12 @@ header a:visited {
   border-top-right-radius: 15px;
 }
 
-.card-image img.ob-pos--down {
+.card__link__image img.ob-pos--down {
   -o-object-position: 0 10px;
      object-position: 0 10px;
 }
 
-.card-image div {
+.card__link__image__special {
   font-size: 13px;
   font-weight: bold;
   color: #008766;
@@ -480,7 +486,7 @@ header a:visited {
   padding: 6px 0 0 25px;
 }
 
-.card-description {
+.card__link__description {
   background-color: white;
   height: 75px;
   width: 100%;
@@ -500,17 +506,17 @@ header a:visited {
           box-shadow: 0px 5px 15px -5px #bebebe;
 }
 
-.card-description .info h2 {
+.card__link__description__info__title {
   font-size: 15px;
   margin-bottom: 3px;
 }
 
-.card-description .info p {
+.card__link__description__info__location {
   font-size: 15px;
   font-weight: lighter;
 }
 
-.card-description a {
+.card__link__description .heart {
   margin-right: 25px;
 }
 

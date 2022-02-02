@@ -6,62 +6,64 @@
     a:visited {
         color: black;
     }
-    &-image {
-        height: 135px;
-        position: relative;
-        img {
-            height: 100%;
+    &__link {
+        &__image {
+            height: 135px;
+            position: relative;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                &.ob-pos {
+                    &--up{
+                        // object-position: 0 -160px;
+                    }
+                    &--down{
+                        object-position: 0 10px;
+                    }
+                }
+            }
+            &__special {
+                font-size: $small-text;
+                font-weight: $bold-text;
+                color: $color-tertiary-darker;
+                width: 80px;
+                height: 30px;
+                border-radius: 3px;
+                background-color: $color-tertiary;
+                position: absolute;
+                top: 14px;
+                right: 10px;
+                padding: 6px 0 0 25px;
+            }
+        }
+        &__description {
+            background-color: white;
+            height: 75px;
             width: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            &.ob-pos {
-                &--up{
-                    // object-position: 0 -160px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            @include drop-shadow("light");
+            &__info {
+                &__title {
+                    font-size: $medium-text;
+                    margin-bottom: 3px;
                 }
-                &--down{
-                    object-position: 0 10px;
+                &__location {
+                    font-size: $medium-text;
+                    font-weight: $thin-text;
                 }
             }
-        }
-        div {
-            font-size: $small-text;
-            font-weight: $bold-text;
-            color: $color-tertiary-darker;
-            width: 80px;
-            height: 30px;
-            border-radius: 3px;
-            background-color: $color-tertiary;
-            position: absolute;
-            top: 14px;
-            right: 10px;
-            padding: 6px 0 0 25px;
-        }
-    }
-    &-description {
-        background-color: white;
-        height: 75px;
-        width: 100%;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 10px;
-        @include drop-shadow("light");
-        .info {
-            h2 {
-                font-size: $medium-text;
-                margin-bottom: 3px;
+            .heart {
+                margin-right: 25px;
             }
-            p {
-                font-size: $medium-text;
-                font-weight: $thin-text;
-            }
-        }
-        a {
-            margin-right: 25px;
         }
     }
 }
