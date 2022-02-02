@@ -12,11 +12,12 @@
         width: 100%;
         max-width: 520px;
         border-radius: 25px;
-        box-shadow: $drop-shadow;
         text-decoration: none;
         display: flex;
         align-items: center;
         color: black;
+        box-shadow: $drop-shadow;
+        @include list-shadow; // <-- WHY NOT WORKING??
         &:hover {
             i {
                 color: $color-primary;

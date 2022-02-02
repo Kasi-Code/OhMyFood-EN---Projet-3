@@ -367,8 +367,6 @@ header a:visited {
   width: 100%;
   max-width: 520px;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 5px 15px -5px #bebebe;
-          box-shadow: 0px 5px 15px -5px #bebebe;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,6 +375,9 @@ header a:visited {
       -ms-flex-align: center;
           align-items: center;
   color: black;
+  -webkit-box-shadow: 0px 5px 15px -5px #bebebe;
+          box-shadow: 0px 5px 15px -5px #bebebe;
+  text-shadow: 0px 5px 15px -5px #bebebe;
 }
 
 .instruction__list a:hover {
