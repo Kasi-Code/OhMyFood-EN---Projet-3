@@ -11,9 +11,9 @@
     // NAME | DURATION | ESASING | DELAY | REAPEAT | STAY
 
     animation: 
-    loader 1s ease-in-out 2, 
-    disappear 1s ease-out 1s forwards,
-    offScreen 1s ease-in-out 3s forwards; 
+    loader .5s linear 2, 
+    disappear .3s ease-out .5s forwards,
+    offScreen 1s ease-out 3s forwards; 
 
     // animation: disappear 4s;
 }

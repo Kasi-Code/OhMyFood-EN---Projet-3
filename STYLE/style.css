@@ -614,8 +614,8 @@ footer .footer__list li a i {
   left: 45%;
   overflow: hidden;
   z-index: 5;
-  -webkit-animation: loader 1s ease-in-out 2,  disappear 1s ease-out 1s forwards, offScreen 1s ease-in-out 3s forwards;
-          animation: loader 1s ease-in-out 2,  disappear 1s ease-out 1s forwards, offScreen 1s ease-in-out 3s forwards;
+  -webkit-animation: loader .5s linear 2,  disappear .3s ease-out .5s forwards, offScreen 1s ease-out 3s forwards;
+          animation: loader .5s linear 2,  disappear .3s ease-out .5s forwards, offScreen 1s ease-out 3s forwards;
 }
 
 .loading-index {
