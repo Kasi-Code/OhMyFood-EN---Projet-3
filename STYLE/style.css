@@ -582,7 +582,7 @@ footer .footer__logo {
 footer .footer__logo img {
   height: 15px;
   width: 100px;
-  content: url("/images/logo/ohmyfood.png");
+  content: url("../images/logo/ohmyfood.png");
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
