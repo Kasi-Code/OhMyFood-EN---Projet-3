@@ -291,7 +291,7 @@ header div .home-btn {
 
 header div img {
   height: 30px;
-  content: url("./images/logo/ohmyfood.png");
+  content: url("../images/logo/ohmyfood.png");
 }
 
 header a:visited {
