@@ -291,7 +291,7 @@ header div .home-btn {
 
 header div img {
   height: 30px;
-  content: url("/images/logo/ohmyfood.png");
+  content: url("./images/logo/ohmyfood.png");
 }
 
 header a:visited {
@@ -803,8 +803,8 @@ footer .footer__list li a i {
   height: 35px;
   border-radius: 50%;
   padding: 8px;
-  -webkit-transition: all 500ms ease-in-out .1s;
-  transition: all 500ms ease-in-out .1s;
+  -webkit-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
 }
 
 .menu__card__list__category__item li:hover .ticked-animation {
