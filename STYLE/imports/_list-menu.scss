@@ -17,12 +17,11 @@
             margin-top: 10px;
             width: 100%;
             li {
-                a {
-                    padding: 15px 13px;
+                a {                  
+                    overflow-x: hidden;
                     margin-top: 15px;
                     background-color: white;
                     min-height: 70px;
-                    // max-height: 70px;
                     border-radius: 15px;
                     @include drop-shadow("light");
                     display: flex;
@@ -31,39 +30,73 @@
                     div {
                         margin: 0;
                     }
-                    .menu__description {
+                    .info {
                         display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 100%;
                         overflow: hidden;
-                        text-align: left;
-                        &__title {
-                            white-space: nowrap;
+                        .menu__description {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: space-between;
                             overflow: hidden;
-                            text-overflow: ellipsis;
-                            max-width: 100%;
+                            text-align: left;
+                            padding: 15px 0 15px 13px;
+                            &__title {
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                max-width: 100%;
+                            }
+                            &__detail {
+                                font-size: $small-text;
+                                color: $grey-text;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                max-width: 100%;
+                            }
                         }
-                        &__detail {
+                        .menu-price {
+                            height: auto;
+                            padding: 40px 8px 0 8px;
                             font-size: $small-text;
-                            color: $grey-text;
-                            white-space: nowrap;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            max-width: 100%;
+                            font-weight: $bold-text;
                         }
                     }
-                    .menu-price {
-                        width: 40px; 
-                        margin-bottom: -24px;
-                        padding-left: 7px;
-                        font-size: $small-text;
-                        font-weight: $bold-text;
                     }
+                    .ticked-animation {      
+                        margin-right: -71px;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        min-width: 70px;
+                        background-color: $color-tertiary;
+                        padding: 18px;
+                        transition-duration: 1s;
+                        transition: all 500ms ease-in-out;
+                        i {
+                            font-size: 20px;
+                            color: $color-tertiary;
+                            background-color: white;
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            padding: 8px;
+                            transition: all 500ms ease-in-out .1s;
+                        }
+                    }
+                    &:hover .ticked-animation {
+                        margin-right: 0;
+                            & i {
+                                transform: rotate(360deg);
+                            }
+                    }                
                 }
                 a:visited {
                     color: black;
                 }
-            }
         }
     } 
 

@@ -46,6 +46,17 @@ $drop-shadow-size-header: 0px 1px 5px 0px;
 
 }
 
-@mixin trans-scale {
+@mixin transition {
+    transition: all 200ms ease-out;
+}
+
+@mixin transform {
     transform: scale(1.01);    
 }
+
+$trans-dur: 2000ms;
+
+@mixin shot-up {
+    transform: translateY(100%);
+    transition: transform $trans-dur cubic-bezier(0, .75, .08, 1);    
+} 

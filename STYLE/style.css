@@ -455,6 +455,8 @@ header a:visited {
   max-height: 245px;
   width: 100%;
   display: block;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
 }
 
 .card a:visited {
@@ -700,7 +702,7 @@ footer .footer__list li a i {
 }
 
 .menu__card__list__category__item li a {
-  padding: 15px 13px;
+  overflow-x: hidden;
   margin-top: 15px;
   background-color: white;
   min-height: 70px;
@@ -723,7 +725,22 @@ footer .footer__list li a i {
   margin: 0;
 }
 
-.menu__card__list__category__item li a .menu__description {
+.menu__card__list__category__item li a .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu__card__list__category__item li a .info .menu__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -734,18 +751,22 @@ footer .footer__list li a i {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   overflow: hidden;
   text-align: left;
+  padding: 15px 0 15px 13px;
 }
 
-.menu__card__list__category__item li a .menu__description__title {
+.menu__card__list__category__item li a .info .menu__description__title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
 }
 
-.menu__card__list__category__item li a .menu__description__detail {
+.menu__card__list__category__item li a .info .menu__description__detail {
   font-size: 13px;
   color: #353535;
   white-space: nowrap;
@@ -754,15 +775,48 @@ footer .footer__list li a i {
   max-width: 100%;
 }
 
-.menu__card__list__category__item li a .menu-price {
-  width: 40px;
-  margin-bottom: -24px;
-  padding-left: 7px;
+.menu__card__list__category__item li a .info .menu-price {
+  height: auto;
+  padding: 40px 8px 0 8px;
   font-size: 13px;
   font-weight: bold;
 }
 
-.menu__card__list__category__item li a:visited {
+.menu__card__list__category__item li .ticked-animation {
+  margin-right: -71px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  min-width: 70px;
+  background-color: #99E2D0;
+  padding: 18px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.menu__card__list__category__item li .ticked-animation i {
+  font-size: 20px;
+  color: #99E2D0;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 8px;
+  -webkit-transition: all 500ms ease-in-out .1s;
+  transition: all 500ms ease-in-out .1s;
+}
+
+.menu__card__list__category__item li:hover .ticked-animation {
+  margin-right: 0;
+}
+
+.menu__card__list__category__item li:hover .ticked-animation i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.menu__card__list__category__item a:visited {
   color: black;
 }
 
