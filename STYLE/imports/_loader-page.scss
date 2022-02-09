@@ -1,0 +1,116 @@
+
+.loader {
+    color: $color-primary;
+    font-size: 60px;
+    position: fixed;
+    bottom: 45%;
+    left: 45%;
+    overflow: hidden;
+    z-index: 5;
+    
+    // NAME | DURATION | ESASING | DELAY | REAPEAT | STAY
+
+    animation: 
+    loader 1s ease-in-out 2, 
+    disappear 1s ease-out 1s forwards,
+    offScreen 1s ease-in-out 3s forwards; 
+
+    // animation: disappear 4s;
+}
+.loading-index {
+    animation: appear 2s ease-in forwards; 
+}
+.item-0 {
+    animation: 
+    appear .3s ease-in forwards,
+    moveItemUp .3s ease-in-out forwards; 
+    .info {
+        animation: 
+        appear .4s ease-in forwards,
+        moveItemTxtUp .5s ease-in forwards; 
+    }
+}
+.item-1 {
+    animation: 
+    appear .7s ease-in forwards,
+    moveItemUp .7s ease-in-out forwards; 
+    .info {
+        animation: 
+        appear .5s ease-in forwards,
+        moveItemTxtUp .8s ease-in forwards; 
+    }
+}
+.item-2 {
+    animation: 
+    appear 1s ease-in forwards,
+    moveItemUp 1s ease-in-out forwards; 
+    .info {
+        animation: 
+        appear 1.1s ease-in forwards,
+        moveItemTxtUp 1.2s ease-in forwards; 
+    }
+}
+.item-3 {
+    animation: 
+    appear 1.5s ease-in forwards,
+    moveItemUp 1.5s ease-in-out forwards; 
+    .info {
+        animation: 
+        appear 1.6s ease-in forwards,
+        moveItemTxtUp 1.7s ease-in forwards; 
+    }
+}
+
+@keyframes loader {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+  }
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+  @keyframes appear {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+    }
+
+@keyframes offScreen {
+    0% {
+        margin-bottom: 0;
+    }
+    100% {
+        margin-bottom: -1000px;
+    }
+  }
+
+  @keyframes moveItemUp {
+      0% {
+          transform: translateY(20%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+  @keyframes moveItemTxtUp {
+    0% {
+        transform: translate(0, -5px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
