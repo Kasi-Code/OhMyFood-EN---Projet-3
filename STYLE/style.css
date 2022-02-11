@@ -607,6 +607,8 @@ footer .footer__list li a i {
 }
 
 .loader {
+  max-width: 70px;
+  max-height: 75px;
   color: #9356DC;
   font-size: 60px;
   position: fixed;
