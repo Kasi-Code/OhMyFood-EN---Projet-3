@@ -606,6 +606,14 @@ footer .footer__list li a i {
   margin-right: 10px;
 }
 
+footer .footer__list__l-3 {
+  font-weight: lighter;
+}
+
+footer .footer__list__l-4 {
+  font-weight: lighter;
+}
+
 .loader {
   max-width: 70px;
   max-height: 75px;
