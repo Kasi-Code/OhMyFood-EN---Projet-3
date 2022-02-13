@@ -615,7 +615,8 @@ footer .footer__list__l-4 {
 }
 
 .loader {
-  padding: 70px;
+  max-width: 70px;
+  max-height: 73px;
   color: #9356DC;
   font-size: 60px;
   position: fixed;
